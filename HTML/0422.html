@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <script>
+            function chk()
+            {
+                var obj = document.getElementsByName("subject")
+
+                for (i = 0; i <= obj.length; i++)
+                {
+                    alert(obj[i].value + ":" + obj[i].checked);
+                }
+            }
+        </script>
+
+    국어 : <input type="radio" name="subject" value="ko"> <br>
+    영어 : <input type="radio" name="subject" value="en"> <br>
+    수학 : <input type="radio" name="subject" value="ma"> <br>
+    과학 : <input type="radio" name="subject" value="sc"> <br>
+
+    응화 : <input type="checkbox" name="subject2" value="1"> <br>
+    플밍 : <input type="checkbox" name="subject2" value="2"> <br>
+    정통 : <input type="checkbox" name="subject2" value="3"> <br>
+    빅데 : <input type="checkbox" name="subject2" value="4"> <br>
+
+    <br>
+
+    <input type="button" onclick="chk();">
+    <input type="button" value = "IT교과체크" onclick="chk();">
+
+    <input type="submit" value = "전송">
+
+
+    </form>
+    
+</body>
+</html>

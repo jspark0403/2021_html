@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fn_check()
+        {
+            alert(document.getElementById("txtInputBox2").value);
+        }
+    </script>
+</head>
+<body>
+    <!-- <fieldset>
+        <legend> 로그인 </legend>
+            <label> 아이디 : <input type = "text"></label>
+    </fieldset> -->
+
+
+    아이디 : <input type = "text" id = "txtInputBox1" size = "50" maxlength = "10"><br>
+    비번 : <input type = "password" id = "txtInputBox2"><br>
+    성명 : <input type = "number" min="1" max="50" id = "txtInputBox3"><br>
+    성별 : <input type = "tel" id = "txtInputBox4"><br>
+    닉네임 : <input type = "search" id = "txtInputBox5"><br>    
+    URL : <input type = "url" id = "txtInputBox5" autofocus required><br> 
+    범위지정 : <input type = "range" name = "slider" for = "result" id = "txtInputBox5" max="100" min="0" step="5" value="25" oninput = "result.value = slider.value"><br>  
+    <input type = "result" for = "slider" oninput = "slider.value = result.value">    <input type = "button" onclick="fn_check()" value="asdf"><br>
+    <input type = "hidden" id = "hddInputhidden1">
+    
+</body>
+</html>
